@@ -1,0 +1,23 @@
+<head>
+	<title>TESTINg</title>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<!-- <meta name="viewport" content="initial-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+	{% include header.html %}
+
+	{% for portfolio in site.portfolio %}
+
+	<a href="{{ portfolio.url | prepend: site.baseurl }}" class="excerpt">
+		<div>
+			{{ portfolio.content }}
+		</div>
+	</a>
+
+	{% endfor %}
+
+</body>
