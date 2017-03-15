@@ -1,17 +1,19 @@
 <head>
-	<title>Maxime Testu</title>
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
-	<link rel="stylesheet" href="/css/reset.css">
-	<link rel="stylesheet" href="/css/style.css">
-	<!-- <meta name="viewport" content="initial-scale=1.0"> -->
-	<meta name="viewport" content="width=device-width">
+	{% include head.html title=title %}
+
+	<meta property="og:description" content="{{ content | lstrip }}" />
+	<meta property="og:type" content="product" />
+	<meta property="og:image" content="{{ page.photo }}" />
 </head>
 <body>
 
-	{% include header.html %}
+	{% include header.html back='/' %}
 
 	<div class="excerpt">
-		{{ page.content }}
+		{% if page.photo %}
+			{% include image.html photo=page.photo %}
+		{% endif %}
+		{{ content }}
 	</div>
 
 	<p style="text-align: center"><a href="/">&larr; Home</a></p>

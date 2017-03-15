@@ -37,3 +37,11 @@ collections:
   portfolio:
     output: true
     permalink: /:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "photo"

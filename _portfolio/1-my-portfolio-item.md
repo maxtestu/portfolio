@@ -1,6 +1,4 @@
 ---
-layout: photo
 title: "Portfolio Item 2"
+photo: "/images/imgl9885.jpg"
 ---
-
-{% include image.html content="/images/imgl9885.jpg" %}
