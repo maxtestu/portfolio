@@ -1,8 +1,13 @@
 {% if page.title %}
 	<title>Maxime Testu - {{ page.title }}</title>
+	<meta property="og:title" content="{{ page.title }} - Maxime Testu" />
 {% else %}
 	<title>Maxime Testu</title>
+	<meta property="og:title" content="Maxime Testu" />
 {% endif %}
+
+<meta property="og:site_name" content="Maxime Testu" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
 
 <style>
 	{% include css/reset.css %}
