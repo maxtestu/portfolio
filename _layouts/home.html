@@ -13,14 +13,23 @@
 	{% for portfolio in site.portfolio %}
 
 	<a href="{{ portfolio.url | prepend: site.baseurl }}" class="excerpt">
-		<div>
+	<!-- <div class="excerpt"> -->
+		<div class="photos">
+			{% if portfolio.photos %}
+				{% for photo in portfolio.photos %}
+					{% include image.html photo=photo %}
+				{% endfor %}
+			{% endif %}
+
 			{% if portfolio.photo %}
 				{% include image.html photo=portfolio.photo %}
 			{% endif %}
-			{{ portfolio.content }}
 		</div>
+		{{ portfolio.content }}
+	<!-- </div> -->
 	</a>
 
 	{% endfor %}
 
+	{% include footer.html %}
 </body>

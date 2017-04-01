@@ -1,4 +1,6 @@
 ---
 title: "Portfolio Item 3"
-photo: "/images/imgl9816.jpg"
+photos: ["/images/imgl9885.jpg","/images/imgl9872.jpg", "/images/imgl9816.jpg"]
 ---
+
+Une seule ligne

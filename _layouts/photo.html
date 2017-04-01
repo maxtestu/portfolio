@@ -3,19 +3,29 @@
 	{% include head.html title=title %}
 
 	<meta property="og:type" content="product" />
-	<meta property="og:image" content="{{ page.photo | absolute_url }}" />
+	<meta property="og:image" content="{{ page.photos[0] | absolute_url }}" />
 </head>
 <body>
 
 	{% include header.html back='/' %}
 
-	<div class="excerpt">
+	<div class="photos-static">
+		{% if page.photos %}
+			{% for photo in page.photos %}
+				{% include image.html photo=photo %}
+				{% if forloop.index == 1 %}
+					{{ content }}
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+
 		{% if page.photo %}
 			{% include image.html photo=page.photo %}
+			{{ content }}
 		{% endif %}
-		{{ content }}
 	</div>
 
-	<p style="text-align: center"><a href="/">&larr; Home</a></p>
+	<!-- <p style="text-align: center"><a href="/">&larr; Home</a></p> -->
 
+	{% include footer.html %}
 </body>

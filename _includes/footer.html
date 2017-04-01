@@ -1,0 +1,20 @@
+<script>
+	var resize = function resize() {
+		$('.photos > .photo > img,p').css({
+			maxWidth: $('html,body').width()-(15/100*$('html,body').width())
+		})
+	}
+	window.onresize = resize;
+	resize();
+	$('.photos').slick({
+		dots: true,
+		infinite: false,
+		// speed: 300,
+		slidesToShow: 1,
+		centerMode: true,
+		centerPadding: 0,
+		arrows: false,
+		focusOnSelect: true,
+		variableWidth: true,
+	});
+</script>
