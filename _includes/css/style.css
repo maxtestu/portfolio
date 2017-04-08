@@ -3,17 +3,6 @@ body {
 	padding-top: 60px;
 }
 
-// .header {
-// 	position: fixed;
-// 	top: 0;
-// 	background: white;
-// 	padding: 10px 20px;
-// 	width: 100%;
-// 	box-sizing: border-box;
-// 	z-index: 1000;
-// 	text-align: center;
-// }
-
 .header {
 	position: fixed;
 	top: 0;
@@ -21,6 +10,7 @@ body {
 	padding: 10px 20px;
 	width: 100%;
 	box-sizing: border-box;
+	z-index: 1000;
 }
 
 h1 {
