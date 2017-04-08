@@ -1,3 +1,4 @@
+{% assign photos = ["les-jumeaux-1"] %}
 <html prefix="og: http://ogp.me/ns#">
 <head>
 	{% include head.html %}
@@ -12,22 +13,22 @@
 
 	{% for portfolio in site.portfolio %}
 
-	<a href="{{ portfolio.url | prepend: site.baseurl }}" class="excerpt">
-	<!-- <div class="excerpt"> -->
-		<div class="photos">
-			{% if portfolio.photos %}
-				{% for photo in portfolio.photos %}
-					{% include image.html photo=photo %}
-				{% endfor %}
-			{% endif %}
+		{% if portfolio.photos %}
+			<div class="photos">
+			{% for photo in portfolio.photos %}
+				{% include image.html photo=photo %}
+			{% endfor %}
+			</div>
+		{% endif %}
 
-			{% if portfolio.photo %}
-				{% include image.html photo=portfolio.photo %}
-			{% endif %}
-		</div>
-		{{ portfolio.content }}
-	<!-- </div> -->
-	</a>
+		{% if portfolio.photo %}
+			<div style="margin-bottom: 10px">{% include image.html photo=portfolio.photo %}</div>
+		{% endif %}
+
+		<a href="{{ portfolio.url | prepend: site.baseurl }}" class="excerpt">
+			<h2>{{ portfolio.title }}</h2>
+			{{ portfolio.content }}
+		</a>
 
 	{% endfor %}
 

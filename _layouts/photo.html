@@ -14,14 +14,14 @@
 			{% for photo in page.photos %}
 				{% include image.html photo=photo %}
 				{% if forloop.index == 1 %}
-					{{ content }}
+					<div class="photo-content">{{ content }}</div>
 				{% endif %}
 			{% endfor %}
 		{% endif %}
 
 		{% if page.photo %}
 			{% include image.html photo=page.photo %}
-			{{ content }}
+			<div class="photo-content">{{ content }}</div>
 		{% endif %}
 	</div>
 

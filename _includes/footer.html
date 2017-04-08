@@ -1,20 +1,37 @@
 <script>
 	var resize = function resize() {
-		$('.photos > .photo > img, .slick-slide > img,p').css({
+		console.log(Math.min.apply(null, $('img').map(function (e,d) { return $(this).height() })));
+		$('.photos > .photo > img, .slick-slide > img,a.excerpt').css({
 			maxWidth: $('html,body').width()-(15/100*$('html,body').width())
 		})
+		// console.log(Math.min.apply(null, $('img').map(function (e,d) { return $(this).height() })));
+		// $('.photos > .photo > img, .slick-slide > img,p').css({
+		// 	maxHeight: Math.min.apply(null, $('img').map(function (e,d) { return $(this).height() }))
+		// })
 	}
-	window.onresize = resize;
-	resize();
-	$('.photos').slick({
-		dots: true,
-		infinite: false,
-		// speed: 300,
-		slidesToShow: 1,
-		centerMode: true,
-		centerPadding: 0,
-		arrows: false,
-		focusOnSelect: true,
-		variableWidth: true,
-	});
+
+	$(document).ready(function () {
+
+		$('img').one('load', function () {
+			console.log($(this).parents('.photos'));
+		})
+
+		window.onresize = resize;
+
+		resize();
+
+		$('.photos').slick({
+			dots: true,
+			infinite: false,
+			// speed: 300,
+			slidesToShow: 1,
+			centerMode: true,
+			centerPadding: 0,
+			arrows: false,
+			focusOnSelect: true,
+			variableWidth: true,
+			variableHeight: true,
+		});
+	})
+
 </script>
