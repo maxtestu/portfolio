@@ -6,4 +6,4 @@ photos: ["DSCN6743.jpg", "DSCN6751.jpg", "DSCN6742.jpg"]
 
 2019,
 
-Véhicule (1), Vehicule (2), Véhicule (3), 68ième édition de Jeune Création, Beaux Arts de Paris, France (FR)
+68ième édition de Jeune Création, Beaux Arts de Paris, France (FR)
