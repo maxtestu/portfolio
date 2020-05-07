@@ -11,7 +11,7 @@
 
 	{% include header.html %}
 
-	{% for portfolio in site.portfolio %}
+	{% for portfolio in site.portfolio reversed %}
 
 		{% if portfolio.photos %}
 			<div class="photos">
@@ -29,6 +29,9 @@
 			<h2>{{ portfolio.title }}</h2>
 			{{ portfolio.content }}
 		</a>
+		{% if portfolio.external_link %}
+			<a href="{{ portfolio.external_link }}" style="display: block;margin: -20px auto 50px;">{{ portfolio.external_link_text }}</a>
+		{% endif %}
 
 	{% endfor %}
 

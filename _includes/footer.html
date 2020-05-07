@@ -1,37 +1,37 @@
 <script>
 	var resize = function resize() {
-		console.log(Math.min.apply(null, $('img').map(function (e,d) { return $(this).height() })));
-		$('.photos > .photo > img, .slick-slide > img,a.excerpt').css({
+		console.log(Math.min.apply(null, $('img').map(function (e,d) { return $(this).height() }) ));
+		$('.photos > .photo > img, .slick-slide > img,a').css({
 			maxWidth: $('html,body').width()-(15/100*$('html,body').width())
 		})
-		// console.log(Math.min.apply(null, $('img').map(function (e,d) { return $(this).height() })));
-		// $('.photos > .photo > img, .slick-slide > img,p').css({
-		// 	maxHeight: Math.min.apply(null, $('img').map(function (e,d) { return $(this).height() }))
-		// })
+		$('.photos').each(function (i, photos) {
+			var image_count = $(photos).children('.photo').length;
+			var timeout = setInterval(function() {
+				if ($(photos).find('.photo > img').filter(function () { return $(this).prop('complete') }).length == image_count) { // all loaded
+					clearInterval(timeout);
+					var maxHeight = $(photos).children('.photo').map(function () { return $(this).height() }).toArray().sort(function (a,b) { return a > b ? 1 : -1 })[0]
+					$(photos).find('.photo > img').css({ height: maxHeight });
+
+					$(photos).slick({
+						dots: true,
+						infinite: false,
+						// speed: 300,
+						slidesToShow: 1,
+						centerMode: true,
+						centerPadding: 0,
+						arrows: false,
+						focusOnSelect: true,
+						variableWidth: true,
+						variableHeight: false,
+					});
+				}
+			}, 10);
+		})
 	}
 
 	$(document).ready(function () {
-
-		$('img').one('load', function () {
-			console.log($(this).parents('.photos'));
-		})
-
 		window.onresize = resize;
-
 		resize();
-
-		$('.photos').slick({
-			dots: true,
-			infinite: false,
-			// speed: 300,
-			slidesToShow: 1,
-			centerMode: true,
-			centerPadding: 0,
-			arrows: false,
-			focusOnSelect: true,
-			variableWidth: true,
-			variableHeight: true,
-		});
 	})
 
 </script>

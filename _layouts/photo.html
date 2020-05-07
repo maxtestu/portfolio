@@ -14,7 +14,12 @@
 			{% for photo in page.photos %}
 				{% include image.html photo=photo %}
 				{% if forloop.index == 1 %}
-					<div class="photo-content">{{ content }}</div>
+					<div class="photo-content">
+						{{ content }}
+						{% if page.external_link %}
+							<a href="{{ page.external_link }}" style="display: block;margin-bottom: 50px;">{{ page.external_link_text }}</a>
+						{% endif %}
+					</div>
 				{% endif %}
 			{% endfor %}
 		{% endif %}
