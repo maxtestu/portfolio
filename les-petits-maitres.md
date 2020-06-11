@@ -30,12 +30,46 @@ La journée est ponctuée d’un goûter proposé par l’artiste, moment pr
 
 <br>
 
-Rue Damremont<br>
-75018 PARIS
 
-<br>
+<div class="flex-container">
+	<div class="flex-item">
+		<h3>Vacances scolaires</h3>
+		<b>Stage Initiation Gravure Enfant/Adolescent</b>
+		<p>5 élèves max, 8-18 ans - 500 euros</p>
+		<ul>
+			<li>17 au 21 août 2020 de 14h à 18h</li>
+			<li>24 au 28 août 2020 de 14h à 18h</li>
+		</ul>
+		<ul style="margin-top: 20px;">
+			<li>19 au 23 octobre 2020 de 14h à 18h</li>
+			<li>26 au 30 octobre 2020 de 14h à 18h</li>
+		</ul>
+		<p></p>
+	</div>
+	<div class="flex-item">
+		<h3>1 cours par semaine</h3>
+		<b>Initiation Gravure Enfant/Adolescent</b>
+		<p>5 élèves max, 8-18 ans - 525 euros</p>
+		<ul>
+			<li>1er trimestre : du mercredi 16 septembre au mercredi 16 décembre (8 cours) de 14h à 17h</li>
+		</ul>
+		<br><br>
+		<b>Initiation Gravure Adulte</b>
+		<p>5 élèves max. - 525 euros</p>
+		<ul>
+			<li>1er trimestre : du jeudi 17 septembre au jeudi 17 décembre (8 cours) de 17h à 20h</li>
+		</ul>
+		<p></p>
+	</div>
+</div>
 
-<b>Contact: <a href="mailto:lespetitsmaitres18@gmail.com">lespetitsmaitres18@gmail.com</a> · 07 68 04 79 19</b>
+<center>
+	Rue Damremont<br>
+	75018 PARIS
+	<br>
+	<br>
+	<b>Contact: <a href="mailto:lespetitsmaitres18@gmail.com">lespetitsmaitres18@gmail.com</a> · 07 68 04 79 19</b>
+</center>
 
 <br>
 
