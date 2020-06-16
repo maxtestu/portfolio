@@ -35,7 +35,7 @@ La journée est ponctuée d’un goûter proposé par l’artiste, moment pr
 	<div class="flex-item">
 		<h3>Vacances scolaires</h3>
 		<b>Stage Initiation Gravure Enfant/Adolescent</b>
-		<p>5 élèves max, 8-18 ans - 500 euros</p>
+		<p>5 élèves max, 8-18 ans - 480 euros</p>
 		<ul>
 			<li>17 au 21 août 2020 de 14h à 18h</li>
 			<li>24 au 28 août 2020 de 14h à 18h</li>
