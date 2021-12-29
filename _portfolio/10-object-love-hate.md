@@ -7,4 +7,4 @@ photos: ["MAXIMETESTU&HÉLÈNELABADIE©margotmontigny-1128 - copie.jpg", "MAXI
 2021
 
   
-  crédits photographiques : Margot Montigny
+crédits photographiques : Margot Montigny

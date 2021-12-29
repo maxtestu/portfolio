@@ -7,4 +7,4 @@ photos: ["MAXIMETESTU©margotmontigny-7002.jpg", "MAXIMETESTU©margotmontigny-70
 2021
 
   
-  crédits photographiques : Margot Montigny
+crédits photographiques : Margot Montigny

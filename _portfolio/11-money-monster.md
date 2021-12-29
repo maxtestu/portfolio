@@ -7,4 +7,4 @@ photos: ["Capture d’écran 2021-11-08 à 09.14.23 - copie.jpg", "DSC_6959 - 
 2021
 
   
-  crédits photographiques : Sebastien Hildebrand
+crédits photographiques : Sebastien Hildebrand
