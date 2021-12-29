@@ -1,9 +1,9 @@
 ---
 title: "La technique, affirmatif ! Quand ça ?"
 permalink: la-technique-affirmatif-quand-ca
-photos: ["la_capitale_tomes_1_et_2_vol_2_vue_exposition_photo_aurelien_mole_courtesy_des_artistes_et_des_tanneries_cac_amilly_138.jpg", "la_capitale_tomes_1_et_2_vol_2_vue_exposition_photo_aurelien_mole_courtesy_des_artistes_et_des_tanneries_cac_amilly_143.jpg", "la_capitale_tomes_1_et_2_vol_2_vue_exposition_photo_aurelien_mole_courtesy_des_artistes_et_des_tanneries_cac_amilly_145.jpg","la_capitale_tomes_1_et_2_vol_2_vue_exposition_photo_aurelien_mole_courtesy_des_artistes_et_des_tanneries_cac_amilly_146.jpg","la_capitale_tomes_1_et_2_vol_2_vue_exposition_photo_aurelien_mole_courtesy_des_artistes_et_des_tanneries_cac_amilly_147.jpg"]
+photos: ["mes hivers (1).jpg", "mes hivers (2).jpg", "mes hivers (3).jpg","DSC02263.jpg","DSC02274.jpg","DSC02273.jpg"]
 ---
 
-2020,
+2018,
 
-« La Capitale : Tomes 1 et 2 vol. 2 », Centre d’art Les Tanneries, Amilly, France (FR)
+Le Coeur, rue de Turenne, Paris (FR)
