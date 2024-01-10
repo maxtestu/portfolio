@@ -10,29 +10,5 @@
 
 	{% include header.html %}
 
-	{% for portfolio in site.portfolio reversed %}
-
-		{% if portfolio.photos %}
-			<div class="photos">
-			{% for photo in portfolio.photos %}
-				{% include image.html photo=photo %}
-			{% endfor %}
-			</div>
-		{% endif %}
-
-		{% if portfolio.photo %}
-			<div style="margin-bottom: 10px">{% include image.html photo=portfolio.photo %}</div>
-		{% endif %}
-
-		<a href="{{ portfolio.url | prepend: site.baseurl }}" class="excerpt">
-			<h2>{{ portfolio.title }}</h2>
-			{{ portfolio.content }}
-		</a>
-		{% if portfolio.external_link %}
-			<a href="{{ portfolio.external_link }}" style="display: block;margin: -20px auto 50px;">{{ portfolio.external_link_text }}</a>
-		{% endif %}
-
-	{% endfor %}
-
 	{% include footer.html %}
 </body>
