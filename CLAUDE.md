@@ -8,6 +8,9 @@ This is a Jekyll-based portfolio website for artist Maxime Testu (maximetestu.co
 
 ## Development Commands
 
+### Ruby Version
+This project uses Ruby 3.3.8 via rbenv. The version is specified in `.ruby-version`.
+
 ### Running the development server
 ```bash
 bundle exec jekyll serve
@@ -23,9 +26,10 @@ bundle install
 ## Architecture
 
 ### Jekyll Configuration
-- **Jekyll version**: 3.6.3
-- **Theme**: Minima 2.0 (with custom overrides)
-- **Markdown**: kramdown
+- **Jekyll version**: 4.4.1
+- **Ruby version**: 3.3.8
+- **Theme**: Minima 2.5 (with custom overrides)
+- **Markdown**: kramdown 2.5.1
 - **Site URL**: https://www.maximetestu.com
 
 ### Collections System
